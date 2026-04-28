@@ -241,16 +241,24 @@ section {
     justify-content: center;
     align-items: center;
     position: relative;
+<<<<<<< HEAD
     width: 100%;
+=======
+>>>>>>> e26a826a34bebc0b55a5f341b82dc29ae930d6c7
 }
 
 /* Rectangle Frame */
 .rectangle-frame {
     position: relative;
+<<<<<<< HEAD
     width: calc(100% - 40px);
     max-width: 320px;
     aspect-ratio: 3/4;
     margin: 20px auto;
+=======
+    width: 320px;
+    height: 420px;
+>>>>>>> e26a826a34bebc0b55a5f341b82dc29ae930d6c7
     overflow: hidden;
     border: 2px solid var(--neon-blue);
     box-shadow: 0 0 20px rgba(0, 240, 255, 0.3), inset 0 0 20px rgba(0, 240, 255, 0.2);
@@ -1083,7 +1091,12 @@ footer {
     }
 
     .rectangle-frame {
+<<<<<<< HEAD
         max-width: 280px;
+=======
+        width: 240px;
+        height: 310px;
+>>>>>>> e26a826a34bebc0b55a5f341b82dc29ae930d6c7
     }
 
     .about-content {
