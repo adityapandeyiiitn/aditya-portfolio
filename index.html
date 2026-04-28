@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya Pandey | Portfolio</title>
+    <meta name="description"
+        content="Personal portfolio of Aditya Pandey, a Computer Science student passionate about web development and data science.">
+    <!-- Google Fonts: Space Grotesk for cyberpunk feel, Inter for readability -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Space+Grotesk:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Matrix/Particle Background -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">AP<span class="neon-text">.</span></div>
+        <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <div class="container reveal hero-content-wrapper">
+                <div class="hero-text">
+                    <p class="greeting">Hello, world. I am</p>
+                    <h1 class="name glitched" data-text="Aditya Pandey">Aditya Pandey</h1>
+
+                    <p class="intro">
+                        CSE 2nd Year Student at <strong>IIIT Nagpur.</strong>
+                        <br>
+                        BS AI & Data Science at
+                        <strong>IIT Guwahati</strong>.
+                        <br>
+                        Passionate about building scalable web apps and extracting
+                        insights from data.
+                    </p>
+                    <h2 class="tagline type-writer">"Turning ideas into real, usable products."</h2>
+                    <div class="cta-group">
+                        <a href="#projects" class="btn primary-btn">View Projects <i
+                                class="fas fa-chevron-right"></i></a>
+                        <a href="#contact" class="btn secondary-btn">Contact Me</a>
+                    </div>
+                </div>
+                <div class="hero-image-wrapper">
+                    <div class="rectangle-frame">
+                        <img src="assets/myphoto.jpg" alt="Aditya Pandey" class="hero-image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container reveal">
+                <h2 class="section-title"><span class="neon-text">About Me</span></h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>I have a strong foundation in data science with hands-on experience in Python for data
+                            analysis and problem-solving. I work with libraries such as NumPy and Pandas to clean,
+                            transform, and analyze datasets, and use Matplotlib and Seaborn to create meaningful
+                            visualizations.</p>
+                        <p>I am also comfortable with SQL (MySQL) and use Jupyter Notebook for interactive workflows. I
+                            have a basic understanding of machine learning using Scikit-learn and have worked on
+                            end-to-end pipelines from data collection to visualization.</p>
+                        <p>Alongside this, I build modern web applications and focus on clean UI, performance, and
+                            scalability.</p>
+                    </div>
+                    <div class="about-visual">
+                        <div class="glitch-wrapper">
+                            <!-- Using a stylized placeholder box with CSS styling instead of an image initially -->
+                            <div class="cyber-avatar-box">
+                                <i class="fas fa-user-astronaut"></i>
+                                <div class="scanline"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills">
+            <div class="container reveal">
+                <h2 class="section-title"><span class="neon-text">Skills</span> & Arsenal</h2>
+                <div class="skills-grid">
+
+                    <div class="skill-category">
+                        <h3><i class="fas fa-code"></i> Languages</h3>
+                        <div class="tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">PHP</span>
+                            <span class="tag">SQL (MySQL)</span>
+                            <span class="tag">Java</span>
+                            <span class="tag">C</span>
+                            <span class="tag">C++</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3><i class="fas fa-database"></i> Data Science</h3>
+                        <div class="tags">
+                            <span class="tag">NumPy</span>
+                            <span class="tag">Pandas</span>
+                            <span class="tag">Matplotlib</span>
+                            <span class="tag">Seaborn</span>
+                            <span class="tag">Scikit-learn</span>
+                            <span class="tag">Jupyter Notebook</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3><i class="fas fa-laptop-code"></i> Web & Tools</h3>
+                        <div class="tags">
+                            <span class="tag">Frontend Development</span>
+                            <span class="tag">Responsive Design</span>
+                            <span class="tag">UI/UX Basics</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category learning-category">
+                        <h3><i class="fas fa-book-open"></i> Currently Learning</h3>
+                        <div class="tags glow-tags">
+                            <span class="tag">MongoDB</span>
+                            <span class="tag">React.js</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">Express.js</span>
+                            <span class="tag">AIML</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <div class="container reveal">
+                <h2 class="section-title"><span class="neon-text">Featured Projects</span></h2>
+
+                <div class="project-list">
+
+                    <!-- Project 1 -->
+                    <div class="project-card">
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3 class="project-title">ConsumeWise</h3>
+                                <p class="project-subtitle">Food Waste Analytics Platform</p>
+                            </div>
+                            <div class="project-description">
+                                <p>A web-based system designed to address food wastage in hostel environments by
+                                    tracking daily consumption patterns and generating actionable insights.</p>
+                                <ul>
+                                    <li>Built an intuitive interface allowing non-technical users to easily log meal
+                                        consumption data.</li>
+                                    <li>Designed structured input flows to ensure consistent data collection for
+                                        analytics.</li>
+                                    <li>Visual representation of consumption trends to identify overproduction.</li>
+                                </ul>
+                                <p class="future-scope"><strong>Future Scope:</strong> Integration with ML models to
+                                    predict food demand.</p>
+                            </div>
+                            <ul class="tech-stack">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="#" class="icon-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                                <a href="#" class="icon-link" aria-label="External Link"><i
+                                        class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card alternate">
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3 class="project-title">AI-Powered Laundry POS</h3>
+                                <p class="project-subtitle">SaaS Product Prototype</p>
+                            </div>
+                            <div class="project-description">
+                                <p>A modern, SaaS-style laundry management web application focused on operational
+                                    efficiency and intelligent decision-making.</p>
+                                <ul>
+                                    <li>Order management system with status tracking and customer segmentation.</li>
+                                    <li>Interactive dashboards for business insights.</li>
+                                    <li>Simulated AI: Dynamic pricing suggestions and delivery time prediction.</li>
+                                </ul>
+                            </div>
+                            <ul class="tech-stack">
+                                <li>React/Next.js</li>
+                                <li>Tailwind CSS</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="#" class="icon-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                                <a href="#" class="icon-link" aria-label="External Link"><i
+                                        class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card">
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3 class="project-title">Mearchsearch</h3>
+                                <p class="project-subtitle">College Merchandise Platform</p>
+                            </div>
+                            <div class="project-description">
+                                <p>A conceptual e-commerce platform tailored for college communities to centralize
+                                    merchandise like apparel and accessories.</p>
+                                <ul>
+                                    <li>Categorized product listings for easy navigation and discoverability.</li>
+                                    <li>Designed scalable frontend architecture ready for backend integration.</li>
+                                    <li>Planned features include user authentication, shopping cart, and payments.</li>
+                                </ul>
+                            </div>
+                            <ul class="tech-stack">
+                                <li>UI/UX Design</li>
+                                <li>Frontend Basics</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="#" class="icon-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                                <a href="#" class="icon-link" aria-label="External Link"><i
+                                        class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div class="project-card alternate">
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3 class="project-title">Voyentra</h3>
+                                <p class="project-subtitle">Travel Discovery & Planning</p>
+                            </div>
+                            <div class="project-description">
+                                <p>A fully responsive travel website designed to provide an engaging and seamless
+                                    browsing experience across devices.</p>
+                                <ul>
+                                    <li>Interactive destination cards and navigation components.</li>
+                                    <li>Responsive grid-based layouts for mobile, tablet, and desktop.</li>
+                                    <li>Backend integration for handling dynamic content.</li>
+                                </ul>
+                            </div>
+                            <ul class="tech-stack">
+                                <li>HTML/CSS/JS</li>
+                                <li>PHP</li>
+                                <li>MySQL</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="#" class="icon-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                                <a href="#" class="icon-link" aria-label="External Link"><i
+                                        class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container reveal">
+                <h2 class="section-title"><span class="neon-text">Initiate Connection</span></h2>
+                <div class="contact-wrapper">
+                    <p class="contact-text">
+                        I'm currently looking for new opportunities and collaborations. My inbox is always open. Whether
+                        you have a question or just want to say hi, I'll try my best to get back to you!
+                    </p>
+                    <a href="https://wa.me/918837830750" target="_blank" class="btn primary-btn pulse-btn">Say Hello <i
+                            class="fab fa-whatsapp"></i></a>
+
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/adityapandeyiiitn/" target="_blank"
+                            aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/adityapandeyiiitn" target="_blank" aria-label="GitHub"><i
+                                class="fab fa-github"></i></a>
+                        <a href="https://www.instagram.com/adityapandey_adp/" target="_blank" aria-label="Instagram"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=adityapandeyiiitn@gmail.com"
+                            target="_blank" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Designed & Built by <span class="neon-text">Aditya Pandey</span></p>
+        <p class="matrix-text-small">Sys.Init: 2026 // Status: Online</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
