@@ -1041,7 +1041,7 @@ footer {
     }
 
     section {
-        padding: 60px 0;
+        padding: 80px 0 60px;
     }
 
     .hero-content-wrapper {
@@ -1083,6 +1083,7 @@ footer {
         width: 240px;
         height: 310px;
         margin: 20px auto;
+        transform: none !important; /* Prevent upward movement on mobile */
     }
 
     .about-content {
