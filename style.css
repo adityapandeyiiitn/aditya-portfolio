@@ -1067,6 +1067,7 @@ section {
     mask-composite: exclude;
     opacity: 0;
     transition: opacity 0.5s ease;
+    pointer-events: none;
 }
 
 .project-card:hover {
@@ -1152,16 +1153,37 @@ section {
 
 .project-links {
     display: flex;
+    justify-content: flex-end;
     gap: 1rem;
+    margin-top: 1.5rem;
+    position: relative;
+    z-index: 2;
 }
 
 .icon-link {
-    font-size: 1.2rem;
-    color: var(--text-main);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0.55rem 1.1rem;
+    font-size: 0.82rem;
+    font-family: var(--font-display);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: var(--neon-blue);
+    border: 1px solid var(--neon-blue);
+    background: rgba(0, 240, 255, 0.02);
+    border-radius: 4px;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    text-decoration: none;
+    box-shadow: 0 0 8px rgba(0, 240, 255, 0.05);
 }
 
 .icon-link:hover {
-    color: var(--neon-green);
+    color: var(--text-light);
+    background: rgba(0, 240, 255, 0.12);
+    border-color: var(--neon-green);
+    box-shadow: 0 0 12px rgba(0, 240, 255, 0.35);
     transform: translateY(-2px);
 }
 
@@ -1173,6 +1195,20 @@ section {
 
 .project-card.alternate::before {
     background: linear-gradient(45deg, transparent, rgba(189, 0, 255, 0.3), transparent);
+}
+
+.project-card.alternate .icon-link {
+    color: var(--neon-purple);
+    border-color: var(--neon-purple);
+    background: rgba(189, 0, 255, 0.02);
+    box-shadow: 0 0 8px rgba(189, 0, 255, 0.05);
+}
+
+.project-card.alternate .icon-link:hover {
+    color: var(--text-light);
+    background: rgba(189, 0, 255, 0.12);
+    border-color: var(--neon-blue);
+    box-shadow: 0 0 12px rgba(189, 0, 255, 0.35);
 }
 
 /* Contact Section */
