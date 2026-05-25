@@ -537,7 +537,7 @@ section {
 .edu-achievements-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 3rem;
+    gap: calc(3rem + 10px);
     align-items: start;
 }
 
