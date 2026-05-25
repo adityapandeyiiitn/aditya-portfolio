@@ -587,6 +587,7 @@ section {
 }
 
 .edu-card {
+    border-color: rgba(0, 240, 255, 0.38);
     text-decoration: none;
     color: inherit;
     cursor: pointer;
