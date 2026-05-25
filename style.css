@@ -640,6 +640,66 @@ section {
     transform: scale(2.1);
 }
 
+/* Empty/Placeholder Internship Cards styling */
+.edu-card.empty-card {
+    border: 1px dashed rgba(0, 240, 255, 0.25);
+    background: rgba(18, 18, 26, 0.35);
+    opacity: 0.55;
+    transition: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
+    cursor: default !important;
+}
+
+.edu-card.empty-card:hover {
+    opacity: 0.95;
+    border-color: var(--neon-purple);
+    border-style: solid;
+    background: rgba(22, 22, 32, 0.85);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(189, 0, 255, 0.15);
+}
+
+.edu-card.empty-card::before {
+    background: var(--neon-purple) !important;
+    box-shadow: 0 0 10px var(--neon-purple) !important;
+}
+
+.empty-logo-wrap {
+    background: rgba(255, 255, 255, 0.02) !important;
+    border: 1px dashed rgba(0, 240, 255, 0.15) !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.empty-icon {
+    font-size: 1.4rem;
+    color: rgba(0, 240, 255, 0.3);
+    transition: all 0.35s ease;
+}
+
+.edu-card.empty-card:hover .empty-icon {
+    color: var(--neon-purple);
+    text-shadow: 0 0 8px var(--neon-purple);
+    transform: rotate(15deg);
+}
+
+.empty-text-title {
+    color: rgba(255, 255, 255, 0.5) !important;
+    transition: color 0.35s ease;
+}
+
+.edu-card.empty-card:hover .empty-text-title {
+    color: var(--text-light) !important;
+}
+
+.empty-text-sub {
+    color: rgba(255, 255, 255, 0.3) !important;
+}
+
+.empty-text-meta {
+    color: rgba(255, 255, 255, 0.2) !important;
+}
+
 .edu-card-info {
     display: flex;
     flex-direction: column;
