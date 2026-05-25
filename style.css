@@ -537,11 +537,12 @@ section {
 .edu-achievements-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: calc(3rem + 10px);
+    gap: calc(3rem + 17px);
     align-items: start;
 }
 
-.edu-col, .comp-col {
+.edu-col,
+.comp-col {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
@@ -566,7 +567,8 @@ section {
 }
 
 /* Common cards / entry styles for symmetry */
-.edu-card, .comp-entry {
+.edu-card,
+.comp-entry {
     display: flex;
     align-items: center;
     gap: 1.8rem;
@@ -594,7 +596,8 @@ section {
     color: inherit;
 }
 
-.edu-card::before, .comp-entry::before {
+.edu-card::before,
+.comp-entry::before {
     content: '';
     position: absolute;
     top: 0;
@@ -606,14 +609,16 @@ section {
     transition: height 0.35s ease;
 }
 
-.edu-card:hover, .comp-entry:hover {
+.edu-card:hover,
+.comp-entry:hover {
     transform: translateY(-4px);
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
     border-color: rgba(0, 240, 255, 0.35);
     background: rgba(22, 22, 32, 0.96);
 }
 
-.edu-card:hover::before, .comp-entry:hover::before {
+.edu-card:hover::before,
+.comp-entry:hover::before {
     height: 100%;
 }
 
@@ -765,24 +770,28 @@ section {
     border: 2px solid rgba(255, 215, 0, 0.25);
     background: rgba(255, 215, 0, 0.05);
 }
+
 .badge-blue {
     color: var(--neon-blue);
     text-shadow: 0 0 10px rgba(0, 240, 255, 0.5);
     border: 2px solid rgba(0, 240, 255, 0.25);
     background: rgba(0, 240, 255, 0.05);
 }
+
 .badge-purple {
     color: #bd00ff;
     text-shadow: 0 0 10px rgba(189, 0, 255, 0.5);
     border: 2px solid rgba(189, 0, 255, 0.25);
     background: rgba(189, 0, 255, 0.05);
 }
+
 .badge-green {
     color: var(--neon-green);
     text-shadow: 0 0 10px rgba(57, 255, 20, 0.5);
     border: 2px solid rgba(57, 255, 20, 0.25);
     background: rgba(57, 255, 20, 0.05);
 }
+
 .badge-orange {
     color: #ff6c00;
     text-shadow: 0 0 10px rgba(255, 108, 0, 0.5);
@@ -854,7 +863,9 @@ section {
 }
 
 @media (max-width: 768px) {
-    .edu-card, .comp-entry {
+
+    .edu-card,
+    .comp-entry {
         padding: 1.3rem 1.4rem;
         gap: 1.2rem;
     }
