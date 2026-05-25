@@ -574,7 +574,7 @@ section {
     gap: 1.8rem;
     padding: 1.6rem 1.8rem;
     background: rgba(18, 18, 26, 0.92);
-    border: 1px solid rgba(0, 240, 255, 0.08);
+    border: 1px solid rgba(0, 240, 255, 0.2);
     border-radius: 12px;
     position: relative;
     overflow: hidden;
